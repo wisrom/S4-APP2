@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 20 12:23:28 2025
+# Process ID: 11240
+# Current directory: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent57560 C:\Users\gabma\Downloads\pb_logique_seq.xpr\pb_logique_seq\pb_logique_seq.xpr
+# Log file: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/vivado.log
+# Journal file: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simul_module_sig_tb.tcl
+restart
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+open_bd_design {C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd}

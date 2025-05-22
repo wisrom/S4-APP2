@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 19 18:37:39 2025
+# Process ID: 37844
+# Current directory: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.runs/design_1_compteur_nbits_0_1_synth_1
+# Command line: vivado.exe -log design_1_compteur_nbits_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_compteur_nbits_0_1.tcl
+# Log file: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.runs/design_1_compteur_nbits_0_1_synth_1/design_1_compteur_nbits_0_1.vds
+# Journal file: C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.runs/design_1_compteur_nbits_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_compteur_nbits_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1307.965 ; gain = 187.641
+Command: synth_design -top design_1_compteur_nbits_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_compteur_nbits_0_1' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38192
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.027 ; gain = 264.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_compteur_nbits_0_1' [c:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_1/synth/design_1_compteur_nbits_0_1.vhd:65]
+	Parameter nbits bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/compteur_nbits.vhd:25' bound to instance 'U0' of component 'compteur_nbits' [c:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_1/synth/design_1_compteur_nbits_0_1.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'compteur_nbits' [C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/compteur_nbits.vhd:34]
+	Parameter nbits bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'compteur_nbits' (1#1) [C:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/compteur_nbits.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'design_1_compteur_nbits_0_1' (2#1) [c:/Users/gabma/Downloads/pb_logique_seq.xpr/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_1/synth/design_1_compteur_nbits_0_1.vhd:65]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 1655.965 ; gain = 316.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 1655.965 ; gain = 316.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.965 ; gain = 316.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:57 . Memory (MB): peak = 1655.965 ; gain = 316.059
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:03:21 . Memory (MB): peak = 1843.508 ; gain = 503.602
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:03:40 . Memory (MB): peak = 1844.391 ; gain = 504.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:03:57 . Memory (MB): peak = 1844.621 ; gain = 504.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
